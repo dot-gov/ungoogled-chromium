@@ -577,7 +577,7 @@ def _test_patches(series_iter, patch_cache, files_under_test):
                     get_logger().debug(
                         'Output of "patch --dry-run" for this patch on this file:\n%s',
                         _dry_check_patched_file(patched_file, orig_file_content))
-                    return True
+                return True
             except: #pylint: disable=bare-except
                 get_logger().warning('Patch failed validation: %s', patch_path_str)
                 get_logger().debug(
