@@ -97,3 +97,5 @@ jobs:
 
       - name: Validate source file lists
         run: ./devutils/check_files_exist.py chromium_src pruning.list domain_substitution.list
+      - name: free disk space check
+        run: df -h
